@@ -1,0 +1,101 @@
+[
+    {
+        "id": 10001,
+        "productName": "Fantacy 3 SmartPhone",
+        "price": 15000,
+        "colors": ["red", "black", "yellow"],
+        "ram": 4,
+        "rom": 64,
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, asperiores, nobis corrupti beatae sunt facere optio culpa error mollitia similique placeat, quos tempore quaerat perspiciatis!"
+    },
+    {
+        "id": 10002,
+        "productName": "Fantacy 3Y SmartPhone",
+        "price": 123000,
+        "colors": ["red", "dark", "white"],
+        "ram": 8,
+        "rom": 128,
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, asperiores, nobis corrupti beatae sunt facere optio culpa error mollitia similique placeat, quos tempore quaerat perspiciatis!"
+    },
+    {
+        "id": 10003,
+        "productName": "FakeMe E71 SmartPhone",
+        "price": 16500,
+        "colors": ["dark", "white", "grey"],
+        "ram": 4,
+        "rom": 64,
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, asperiores, nobis corrupti beatae sunt facere optio culpa error mollitia similique placeat, quos tempore quaerat perspiciatis!"
+    },
+    {
+        "id": 10004,
+        "productName": "Lemon Y55 SmartPhone",
+        "price": 11000,
+        "colors": ["dark", "blue", "ocean blue"],
+        "ram": 3,
+        "rom": 64,
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, asperiores, nobis corrupti beatae sunt facere optio culpa error mollitia similique placeat, quos tempore quaerat perspiciatis!"
+    },
+    {
+        "id": 10005,
+        "productName": "WhiteBerry C3R SmartPhone",
+        "price": 24000,
+        "colors": ["white", "grey", "dark"],
+        "ram": 4,
+        "rom": 128,
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, asperiores, nobis corrupti beatae sunt facere optio culpa error mollitia similique placeat, quos tempore quaerat perspiciatis!"
+    },
+    {
+        "id": 10006,
+        "productName": "Orange 9 SmartPhone",
+        "price": 40000,
+        "colors": ["white", "black", "Slate"],
+        "ram": 6,
+        "rom": 128,
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, asperiores, nobis corrupti beatae sunt facere optio culpa error mollitia similique placeat, quos tempore quaerat perspiciatis!"
+    },
+    {
+        "id": 10007,
+        "productName": "Yankee 3P SmartPhone",
+        "price": 25000,
+        "colors": ["white", "black", "yellow"],
+        "ram": 6,
+        "rom": 128,
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, asperiores, nobis corrupti beatae sunt facere optio culpa error mollitia similique placeat, quos tempore quaerat perspiciatis!"
+    },
+    {
+        "id": 10008,
+        "productName": "Fantacy 1X SmartPhone",
+        "price": 35000,
+        "colors": ["red", "black", "yellow"],
+        "ram": 4,
+        "rom": 128,
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, asperiores, nobis corrupti beatae sunt facere optio culpa error mollitia similique placeat, quos tempore quaerat perspiciatis!"
+    },
+    {
+        "id": 10009,
+        "productName": "Fantacy 3 Lite SmartPhone",
+        "price": 11000,
+        "colors": ["red", "black", "yellow"],
+        "ram": 3,
+        "rom": 64,
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, asperiores, nobis corrupti beatae sunt facere optio culpa error mollitia similique placeat, quos tempore quaerat perspiciatis!"
+    },
+    {
+        "id": 100010,
+        "productName": "Fantacy S4 SmartPhone",
+        "price": 22000,
+        "colors": ["red", "black", "yellow"],
+        "ram": 4,
+        "rom": 128,
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, asperiores, nobis corrupti beatae sunt facere optio culpa error mollitia similique placeat, quos tempore quaerat perspiciatis!"
+    },
+    {
+        "id": 100011,
+        "productName": "Fantacy 6b SmartPhone",
+        "price": 65000,
+        "colors": ["red", "black", "yellow"],
+        "ram": 8,
+        "rom": 128,
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, asperiores, nobis corrupti beatae sunt facere optio culpa error mollitia similique placeat, quos tempore quaerat perspiciatis!"
+    }
+]
