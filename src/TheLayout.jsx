@@ -17,7 +17,7 @@ export default function TheLayout() {
                 <Routes>
                     <Route path="/" element={<Home />}></Route>
                     <Route path="/about" element={<About />}></Route>
-                    <Route path="/shop" element={<Shop />}></Route>
+                    <Route path="/all-products" element={<Shop />}></Route>
                     <Route path="/login" element={<Login />}></Route>
                 </Routes>
             </main>
