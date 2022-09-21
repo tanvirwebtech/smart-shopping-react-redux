@@ -27,22 +27,26 @@ export default function Header() {
                     <div className="useful-icons">
                         <ul className="flex p-2  bg-siteGray-100 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-medium md:border-0  dark:bg-gray-700 dark:border-gray-900">
                             <li class="font-sans p-1 md:inline-block lg:mt-0 ml-2 align-middle ">
-                                <svg
-                                    className="w-4 sm:w-5 md:w-6"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    viewBox="0 0 24 24"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth={2}
-                                        d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
-                                    />
-                                </svg>
+                                {/* Cart Icon  */}
+                                <Link to="/cart">
+                                    <svg
+                                        className="w-4 sm:w-5 md:w-6"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            strokeWidth={2}
+                                            d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+                                        />
+                                    </svg>
+                                </Link>
                             </li>
                             <li class="font-sans p-1 md:inline-block lg:mt-0 ml-2 align-middle ">
+                                {/* Wishlist Icon  */}
                                 <svg
                                     className="w-4 sm:w-5 md:w-6"
                                     fill="none"
@@ -59,6 +63,7 @@ export default function Header() {
                                 </svg>
                             </li>
                             <li class="font-sans p-1 md:inline-block lg:mt-0 ml-2 align-middle ">
+                                {/* User Icon */}
                                 <svg
                                     className="w-4 sm:w-5 md:w-6"
                                     fill="none"

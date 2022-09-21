@@ -85,10 +85,7 @@ export default function ProductSlider(props) {
                             <ProductCard
                                 key={product.id}
                                 imgCls="w-1/2 mx-auto"
-                                img={product.img}
-                                title={product.productName}
-                                price={product.price}
-                                category={product.category}
+                                product={product}
                             ></ProductCard>
                         ))}
                     </Slider>

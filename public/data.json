@@ -11,7 +11,9 @@
         "ram": 8,
         "rom": 128,
         "category": "smartphone",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, asperiores, nobis corrupti beatae sunt facere optio culpa error mollitia similique placeat, quos tempore quaerat perspiciatis!"
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, asperiores, nobis corrupti beatae sunt facere optio culpa error mollitia similique placeat, quos tempore quaerat perspiciatis!",
+        "stock": 32,
+        "maxOrder": 5
     },
     {
         "id": 100012,
@@ -23,7 +25,9 @@
             "https://res.cloudinary.com/du2czb78h/image/upload/v1663342133/smart-shopping/product-4_wmaicx.jpg"
         ],
         "category": "camera",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, asperiores, nobis corrupti beatae sunt facere optio culpa error mollitia similique placeat, quos tempore quaerat perspiciatis!"
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, asperiores, nobis corrupti beatae sunt facere optio culpa error mollitia similique placeat, quos tempore quaerat perspiciatis!",
+        "stock": 74,
+        "maxOrder": 5
     },
     {
         "id": 100013,
@@ -35,7 +39,9 @@
             "https://res.cloudinary.com/du2czb78h/image/upload/v1663342132/smart-shopping/product-5_svqlgl.jpg"
         ],
         "category": "camera",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, asperiores, nobis corrupti beatae sunt facere optio culpa error mollitia similique placeat, quos tempore quaerat perspiciatis!"
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, asperiores, nobis corrupti beatae sunt facere optio culpa error mollitia similique placeat, quos tempore quaerat perspiciatis!",
+        "stock": 58,
+        "maxOrder": 5
     },
     {
         "id": 100014,
@@ -47,7 +53,9 @@
             "https://res.cloudinary.com/du2czb78h/image/upload/v1663342132/smart-shopping/product-1_pjwwwx.jpg"
         ],
         "category": "camera",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, asperiores, nobis corrupti beatae sunt facere optio culpa error mollitia similique placeat, quos tempore quaerat perspiciatis!"
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, asperiores, nobis corrupti beatae sunt facere optio culpa error mollitia similique placeat, quos tempore quaerat perspiciatis!",
+        "stock": 12,
+        "maxOrder": 5
     },
     {
         "id": 100015,
@@ -64,7 +72,9 @@
         "hdd": 1,
         "size": 16.5,
         "weight": 2,
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, asperiores, nobis corrupti beatae sunt facere optio culpa error mollitia similique placeat, quos tempore quaerat perspiciatis!"
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, asperiores, nobis corrupti beatae sunt facere optio culpa error mollitia similique placeat, quos tempore quaerat perspiciatis!",
+        "stock": 60,
+        "maxOrder": 5
     },
     {
         "id": 100016,
@@ -81,6 +91,8 @@
         "hdd": 1,
         "size": 16.5,
         "weight": 2,
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, asperiores, nobis corrupti beatae sunt facere optio culpa error mollitia similique placeat, quos tempore quaerat perspiciatis!"
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, asperiores, nobis corrupti beatae sunt facere optio culpa error mollitia similique placeat, quos tempore quaerat perspiciatis!",
+        "stock": 42,
+        "maxOrder": 5
     }
 ]

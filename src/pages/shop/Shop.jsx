@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import ProductCard from "../../common/productCard/ProductCard";
 import ProductSlider from "../../common/productSlider/ProductSlider";
 
 export default function Shop() {
@@ -18,8 +19,13 @@ export default function Shop() {
 
     return (
         <div>
-            {products.filter( )}
-            <ProductSlider sectionHeading="" />
+            <div className="container mx-auto">
+                <div className="grid grid-cols-4 gap-4">
+                    {products.map((pd) => (
+                        <ProductCard product={pd} />
+                    ))}
+                </div>
+            </div>
         </div>
     );
 }
