@@ -26,7 +26,7 @@ export default function Header() {
                     <SearchBox></SearchBox>
                     <div className="useful-icons">
                         <ul className="flex p-2  bg-siteGray-100 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-medium md:border-0  dark:bg-gray-700 dark:border-gray-900">
-                            <li class="font-sans p-1 md:inline-block lg:mt-0 ml-2 align-middle ">
+                            <li className="font-sans p-1 md:inline-block lg:mt-0 ml-2 align-middle ">
                                 {/* Cart Icon  */}
                                 <Link to="/cart">
                                     <svg
@@ -45,7 +45,7 @@ export default function Header() {
                                     </svg>
                                 </Link>
                             </li>
-                            <li class="font-sans p-1 md:inline-block lg:mt-0 ml-2 align-middle ">
+                            <li className="font-sans p-1 md:inline-block lg:mt-0 ml-2 align-middle ">
                                 {/* Wishlist Icon  */}
                                 <svg
                                     className="w-4 sm:w-5 md:w-6"
@@ -62,7 +62,7 @@ export default function Header() {
                                     />
                                 </svg>
                             </li>
-                            <li class="font-sans p-1 md:inline-block lg:mt-0 ml-2 align-middle ">
+                            <li className="font-sans p-1 md:inline-block lg:mt-0 ml-2 align-middle ">
                                 {/* User Icon */}
                                 <svg
                                     className="w-4 sm:w-5 md:w-6"
@@ -123,15 +123,15 @@ export default function Header() {
                                 ></path>
                             </svg>
                         </button>
-                        {/* <li class="font-sans block md:inline-block md:mt-0 md:ml-6 align-middle headerNavLink lg:hidden">
-                            <Link to="/" role="button" class="relative flex">
+                        {/* <li className="font-sans block md:inline-block md:mt-0 md:ml-6 align-middle headerNavLink lg:hidden">
+                            <Link to="/" role="button" className="relative flex">
                                 <svg
-                                    class="flex-1 w-8 h-8 fill-current"
+                                    className="flex-1 w-8 h-8 fill-current"
                                     viewbox="0 0 24 24"
                                 >
                                     <path d="M17,18C15.89,18 15,18.89 15,20A2,2 0 0,0 17,22A2,2 0 0,0 19,20C19,18.89 18.1,18 17,18M1,2V4H3L6.6,11.59L5.24,14.04C5.09,14.32 5,14.65 5,15A2,2 0 0,0 7,17H19V15H7.42A0.25,0.25 0 0,1 7.17,14.75C7.17,14.7 7.18,14.66 7.2,14.63L8.1,13H15.55C16.3,13 16.96,12.58 17.3,11.97L20.88,5.5C20.95,5.34 21,5.17 21,5A1,1 0 0,0 20,4H5.21L4.27,2M7,18C5.89,18 5,18.89 5,20A2,2 0 0,0 7,22A2,2 0 0,0 9,20C9,18.89 8.1,18 7,18Z" />
                                 </svg>
-                                <span class="absolute right-0 top-0 rounded-full bg-red-600 w-4 h-4 top right p-0 m-0 text-white font-mono text-sm  leading-tight text-center">
+                                <span className="absolute right-0 top-0 rounded-full bg-red-600 w-4 h-4 top right p-0 m-0 text-white font-mono text-sm  leading-tight text-center">
                                     5
                                 </span>
                             </Link>

@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { addToCart } from "./../../redux/actions/cartActions";
 
 export default function Product() {
     const { id } = useParams();
@@ -20,6 +22,8 @@ export default function Product() {
         img: newProduct?.img,
     };
 
+    const dispatch = useDispatch();
+
     return (
         <div>
             <div className="container">
@@ -35,7 +39,12 @@ export default function Product() {
                         {newProduct && <h2>{newProduct.productName} </h2>}
                         <div className="product-btns">
                             <button className="cart-btn mr-2">Buy Now</button>
-                            <button className="cart-btn">Add To Cart</button>
+                            <button
+                                className="cart-btn"
+                                onClick={() => dispatch(addToCart(newProduct))}
+                            >
+                                Add To Cart
+                            </button>
                         </div>
                     </div>
                     <div className="more-info"></div>

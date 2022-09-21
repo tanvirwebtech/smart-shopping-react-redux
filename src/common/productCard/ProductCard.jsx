@@ -1,7 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { addToCart } from "../../redux/actions/cartActions";
 export default function ProductCard(props) {
     const { product } = props;
+    const dispatch = useDispatch();
+    const cartProduct = useSelector((state) => state);
+    console.log(cartProduct);
     return (
         <div className="product-card border m-2">
             <div className="product-wrapper">
@@ -39,7 +44,20 @@ export default function ProductCard(props) {
                     </div>
                     <div className="product-footer p-2 flex justify-between">
                         <div className="add-to-cart-btn">
-                            <button className="cart-btn">Add to cart</button>
+                            {cartProduct?.includes(product?.id) ? (
+                                <Link to="/cart">
+                                    <button className="py-2 px-4 bg-primaryYellow text-gray-900 border-0 text-sm rounded-sm">
+                                        View Cart
+                                    </button>
+                                </Link>
+                            ) : (
+                                <button
+                                    className="cart-btn"
+                                    onClick={() => dispatch(addToCart(product))}
+                                >
+                                    Add to cart
+                                </button>
+                            )}
                         </div>
                         <div className="add-to-wishlist-btn">
                             <button className="cart-btn">
