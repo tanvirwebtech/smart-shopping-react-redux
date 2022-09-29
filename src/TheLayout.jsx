@@ -16,7 +16,7 @@ export default function TheLayout() {
             <header>
                 <Header></Header>
             </header>
-            <main>
+            <main className="mt-40">
                 <Suspense fallback={<>Loading</>}>
                     <Routes>
                         <Route path="/" element={<Home />}></Route>

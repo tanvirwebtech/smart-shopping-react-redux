@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
 import Slider from "react-slick";
 import ProductCard from "./../productCard/ProductCard";
 function SamplePrevArrow(props) {
@@ -52,12 +53,7 @@ function SampleNextArrow(props) {
 }
 
 export default function ProductSlider(props) {
-    const [products, setProducts] = useState([]);
-    useEffect(() => {
-        fetch("./data.json")
-            .then((res) => res.json())
-            .then((data) => setProducts(data));
-    }, []);
+    const products = useSelector((state) => state.products);
 
     const { sectionHeading } = props;
     const settings = {
@@ -69,6 +65,47 @@ export default function ProductSlider(props) {
 
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    dots: false,
+                    infinite: true,
+                    speed: 500,
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+
+                    nextArrow: <SampleNextArrow />,
+                    prevArrow: <SamplePrevArrow />,
+                },
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    dots: false,
+                    infinite: true,
+                    speed: 500,
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+
+                    nextArrow: <SampleNextArrow />,
+                    prevArrow: <SamplePrevArrow />,
+                },
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    dots: false,
+                    infinite: true,
+                    speed: 500,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+
+                    nextArrow: <SampleNextArrow />,
+                    prevArrow: <SamplePrevArrow />,
+                },
+            },
+        ],
     };
     return (
         <div className="container w-10/12 mx-auto mt-10">
@@ -83,7 +120,7 @@ export default function ProductSlider(props) {
                     <Slider {...settings}>
                         {products.map((product) => (
                             <ProductCard
-                                key={product.id}
+                                key={product._id}
                                 imgCls="w-1/2 mx-auto"
                                 product={product}
                             ></ProductCard>

@@ -1,26 +1,17 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import { useDispatch } from "react-redux";
+import { Link, useParams } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "./../../redux/actions/cartActions";
 
 export default function Product() {
+    const products = useSelector((state) => state.products);
+    const cartProduct = useSelector((state) => state.cart);
     const { id } = useParams();
-    const [products, setProducts] = useState([]);
     const [newProduct, setNewProduct] = useState({});
+
     useEffect(() => {
-        fetch("/data.json")
-            .then((res) => res.json())
-            .then((data) => {
-                setProducts(data);
-                setNewProduct(products.find((pd) => pd.id === parseInt(id)));
-            });
-    }, [id, newProduct]);
-    const props = {
-        width: 400,
-        height: 250,
-        zoomWidth: 500,
-        img: newProduct?.img,
-    };
+        setNewProduct(products.find((pd) => pd._id === id));
+    }, [products, id]);
 
     const dispatch = useDispatch();
 
@@ -39,12 +30,22 @@ export default function Product() {
                         {newProduct && <h2>{newProduct.productName} </h2>}
                         <div className="product-btns">
                             <button className="cart-btn mr-2">Buy Now</button>
-                            <button
-                                className="cart-btn"
-                                onClick={() => dispatch(addToCart(newProduct))}
-                            >
-                                Add To Cart
-                            </button>
+                            {cartProduct?.includes(newProduct?._id) ? (
+                                <Link to="/cart">
+                                    <button className="py-2 px-4 bg-primaryYellow text-gray-900 border-0 text-sm rounded-sm">
+                                        View Cart
+                                    </button>
+                                </Link>
+                            ) : (
+                                <button
+                                    className="cart-btn"
+                                    onClick={() =>
+                                        dispatch(addToCart(newProduct))
+                                    }
+                                >
+                                    Add to cart
+                                </button>
+                            )}
                         </div>
                     </div>
                     <div className="more-info"></div>

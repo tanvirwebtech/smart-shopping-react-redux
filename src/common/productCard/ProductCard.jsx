@@ -5,7 +5,7 @@ import { addToCart } from "../../redux/actions/cartActions";
 export default function ProductCard(props) {
     const { product } = props;
     const dispatch = useDispatch();
-    const cartProduct = useSelector((state) => state);
+    const cartProduct = useSelector((state) => state.cart);
     console.log(cartProduct);
     return (
         <div className="product-card border m-2">
@@ -23,7 +23,7 @@ export default function ProductCard(props) {
                             <small>{product?.category}</small>
                         </div>
                         <div className="title my-2">
-                            <Link to={`/product/${product?.id}`}>
+                            <Link to={`/product/${product?._id}`}>
                                 <h4 className="font-medium text-2xl">
                                     {product?.productName}
                                 </h4>
@@ -44,7 +44,7 @@ export default function ProductCard(props) {
                     </div>
                     <div className="product-footer p-2 flex justify-between">
                         <div className="add-to-cart-btn">
-                            {cartProduct?.includes(product?.id) ? (
+                            {cartProduct?.includes(product?._id) ? (
                                 <Link to="/cart">
                                     <button className="py-2 px-4 bg-primaryYellow text-gray-900 border-0 text-sm rounded-sm">
                                         View Cart

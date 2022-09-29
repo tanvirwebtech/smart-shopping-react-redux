@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/logo3.png";
 import SearchBox from "./headerComponents/SearchBox";
+import { useSelector } from "react-redux";
 
 export default function Header() {
     const [navToggle, setNavToggle] = useState(false);
@@ -9,10 +10,10 @@ export default function Header() {
         setNavToggle(!navToggle);
         console.log(navToggle);
     };
-
+    const cart = useSelector((state) => state.cart);
     return (
         <div>
-            <nav className="bg-siteGray-100 border-b border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-700">
+            <nav className="bg-siteGray-100 border-b border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-700 fixed top-0 w-full z-50">
                 <div className="container flex items-center mx-auto justify-between">
                     <Link to="/" className="flex items-center">
                         <div className="w-2/3 sm:w-full">
@@ -28,7 +29,7 @@ export default function Header() {
                         <ul className="flex p-2  bg-siteGray-100 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-medium md:border-0  dark:bg-gray-700 dark:border-gray-900">
                             <li className="font-sans p-1 md:inline-block lg:mt-0 ml-2 align-middle ">
                                 {/* Cart Icon  */}
-                                <Link to="/cart">
+                                <Link to="/cart" className="relative">
                                     <svg
                                         className="w-4 sm:w-5 md:w-6"
                                         fill="none"
@@ -43,6 +44,9 @@ export default function Header() {
                                             d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
                                         />
                                     </svg>
+                                    <span className="absolute -right-2 top-0 rounded-full bg-primaryYellow w-4 h-4 top right p-0 m-0 text-gray-900 font-mono text-sm  leading-tight text-center">
+                                        {cart.length}
+                                    </span>
                                 </Link>
                             </li>
                             <li className="font-sans p-1 md:inline-block lg:mt-0 ml-2 align-middle ">

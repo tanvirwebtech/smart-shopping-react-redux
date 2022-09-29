@@ -5,12 +5,20 @@ import watch from "../../assets/images/smart-watch.jpg";
 import "./Home.css";
 import ProductSlider from "./../../common/productSlider/ProductSlider";
 import ProductCard from "./../../common/productCard/ProductCard";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import getProducts from "../../redux/actions/productAction";
 export default function Home() {
     const cards = [
         { id: 1, img: camera, title: "cameras" },
         { id: 2, img: headphones, title: "headphones" },
         { id: 3, img: watch, title: "smart watches" },
     ];
+    const dispatch = useDispatch();
+    useEffect(() => {
+        dispatch(getProducts("products"));
+    }, []);
+
     return (
         <>
             <section className="mt-8">
@@ -43,7 +51,7 @@ export default function Home() {
             <ProductSlider sectionHeading="Latest Products"></ProductSlider>
             <section className="mt-10 py-10">
                 <div className="container w-10/12 mx-auto">
-                    <div className="grid grid-cols-4 gap-2">
+                    <div className="grid grid-cols-1 md:grid-cols-4 sm:grid-cols-2  gap-2">
                         <ProductCard imgCls="w-full"></ProductCard>
                         <ProductCard imgCls="w-full"></ProductCard>
                         <ProductCard imgCls="w-full"></ProductCard>
